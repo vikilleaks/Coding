@@ -13,7 +13,7 @@ using namespace __gnu_pbds;
 
 ll n,m,u,v,w,cost;
 vector<pair<pair<ll,ll>,ll> > adj;
-ll p[MAXN],r[MAXN];
+ll p[MAXN],r[MAXN],sz[MAXN];
 vector<pair<ll,ll> > res;
 
 bool trick(const pair<pair<ll,ll>,ll> &a, const pair<pair<ll,ll>,ll> &b)
@@ -25,6 +25,7 @@ void make_set(ll v)
 {
 	p[v]=v;
 	r[v]=0;
+	sz[v]=0;
 }
 
 ll find_set(ll v)
@@ -40,6 +41,7 @@ void union_sets(ll v1, ll v2)
 	{
 		if(r[a]<r[b]) swap(a,b);
 		p[b]=a;
+		sz[a]+=sz[b];
 		if(r[a]==r[b]) r[a]++;
 	}
 }
