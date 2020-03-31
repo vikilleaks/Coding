@@ -66,7 +66,7 @@ void solve()
 		}
 	}
 	cout<<cost<<endl;
-	// for(ll i=0;i<res.size();i++) cout<<res[i].ff<<" "<<res[i].ss<<endl;
+	for(ll i=0;i<res.size();i++) cout<<res[i].ff<<" "<<res[i].ss<<endl;
 }
 
 int main()
