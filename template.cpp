@@ -4,6 +4,8 @@
 #define ff first
 #define ss second
 #define ll long long
+#define pi pair<int,int>
+#define endl "\n"
 #define MAXN 200005
 using namespace std;
 
