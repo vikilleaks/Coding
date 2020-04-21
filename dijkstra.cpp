@@ -24,17 +24,17 @@ void dijkstra()
 	{
 		pair<ll,ll> t=*s.begin();
 		s.erase(s.begin());
-		ll v=t.ss, w=t.ff;
-		if(vis[v]) continue;
-		vis[v]=1;
-		for(ll i=0;i<adj[v].size();i++)
+		ll u=t.ss;
+		if(vis[u]) continue;
+		vis[u]=1;
+		for(ll i=0;i<adj[u].size();i++)
 		{
-			ll x=adj[v][i].ff, y=adj[v][i].ss;
-			if(d[v]+y < d[x])
+			ll v=adj[u][i].ff, w=adj[u][i].ss;
+			if(d[u]+w < d[v])
 			{
-				d[x]=d[v]+y;
-				p[x]=v;
-				s.insert(mp(d[x],x));
+				d[v]=d[u]+w;
+				p[v]=u;
+				s.insert(mp(d[v],v));
 			}
 		}
 	}
