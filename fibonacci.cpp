@@ -41,6 +41,7 @@ void matexp(vector<vector<ll> > &F, ll y)
     F[1][1] = res[1][1];
 }
 
+// [Fn Fn+1] = [F0 F1] * ([[0 1],[1 1]]^n)
 void solve()
 {
     cin>>n;
