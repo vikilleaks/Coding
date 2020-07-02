@@ -26,6 +26,8 @@ ll modexp(ll a, ll b)
     }
     return res%m;
 }
+// t[i] = ((-1)^i)/i!
+// !n = n!* summation(t[i];0<=i<=n)
 
 void solve()
 {
