@@ -44,7 +44,7 @@ ll check(ll maxx, vector<ll> &cnt)
 
 void solve()
 {
-	ll n,x,maxx=ll_MIN;
+    ll n,x,maxx=ll_MIN;
     cin>>n;
     vector<ll> cnt(MAXN,0);
     for(ll i=0;i<n;i++)
