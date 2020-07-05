@@ -1,3 +1,6 @@
+#pragma GCC optimize("Ofast")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,tune=native")
+#pragma GCC optimize("unroll-loops")
 #include <bits/stdc++.h>
 #define pb push_back
 #define mp make_pair
@@ -9,6 +12,7 @@
 #define pi pair<int,int>
 #define endl "\n"
 #define MAXN 100005
+#define mod ((ll)(1e9 + 7))
 using namespace std;
 
 void solve()
