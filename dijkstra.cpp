@@ -51,6 +51,7 @@ void solve()
     {
         cin >> a >> b >> c;
         adj[a].pb(mp(b, c));
+	// adj[b].pb(mp(a, c)); for undirected graph
     }
     for (ll i = 1; i <= n; i++)
         d[i] = ll_MAX;
