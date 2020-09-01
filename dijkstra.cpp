@@ -16,6 +16,7 @@ vector<pi> adj[MAXN];
 
 // T=O(ElogV)
 // algo invariant if graph contains multiple edges or loops
+// Doesn't work for negative weight edges. Use Bellman-Ford in that case.
 void dijkstra(ll s)
 {
     // pairs in a set are sorted by the first value of the pair.The Dijkstra's algorithm runs for n iterations. 
